@@ -86,17 +86,18 @@ class _RegistrationState extends State<Registration> {
                 ),
                 TxtFld(
                   security: true,
-                  label: 'Password',
+                  label: 'Confirm Password',
                   picon: Icon(Icons.lock_open),
                 ),
                 SizedBox(
                   height: 30.0,
                 ),
                 MaterialButton(
-                  onPressed: () {},
+                  onPressed: () {
+                  },
                   height: 50.0,
                   minWidth: 170.0,
-                  child: Text('LOG IN',
+                  child: Text('Create',
                       style: TextStyle(
                           color: Colors.white, fontWeight: FontWeight.bold)),
                   color: Colors.blue.shade900,
@@ -117,7 +118,9 @@ class _RegistrationState extends State<Registration> {
                       ),
                     ),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                             Navigator.pop(context);
+                      },
                       child: Text('Login here'),
                     ),
                   ],
